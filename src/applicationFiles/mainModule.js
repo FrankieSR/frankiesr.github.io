@@ -15,7 +15,7 @@ define([
     setState
 }, getData) => {
     ko.deferUpdates = true;
-    let dataURL = "http://5b165eaba1c7e300147c8724.mockapi.io/products";
+    let dataURL = "../../jsonProducts.json";
 
     //  -- this is my application state  ----
     //  -- used variables ------

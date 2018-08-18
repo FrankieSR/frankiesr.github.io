@@ -10,9 +10,10 @@ define(function() {
                 }
                 response.json().then(data => {
                     let dataArray = [];
-                    for (var key in data[0]) {
-                        if (data[0].hasOwnProperty(key)) {
-                            dataArray.push(data[0][key]);
+
+                    for (let key in data) {
+                        if (data.hasOwnProperty(key)) {
+                            dataArray.push(data[key]);
                         }
                     }
 

@@ -60,3 +60,11 @@ $box-shadow-circle: 0 0 1px 4px rgba($orange, 0.9),
              0 0 1px 6px rgba($orange, 0.7),
              0 0 1px 8px rgba($orange, 0.5);
 $box-shadow: 0 0 1px 1px $white, 0 10px 20px 0px $gray-600;
+
+
+//
+//- media query variables colors---------------------------------------------------
+
+$media_desktop: 1367px;
+$media_tablet: 769px;
+$media_mobile: 540px;
