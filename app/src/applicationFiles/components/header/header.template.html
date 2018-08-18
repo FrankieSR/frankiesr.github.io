@@ -1,0 +1,15 @@
+<!-- header template  -->
+<div class="header">
+    <div class="header__item">
+        <logo-template></logo-template>
+    </div>
+    <div class="header__item" data-bind="click: visibProdInPurchaseCart">
+            <div>
+                <span class="header__cart-value"
+                      data-bind="text: lengthPurchaseCart().length">
+                </span>
+                <img class="header__cart-icon" src="https://flaticons.net/icons/Shopping/Shopping-Cart-03.png"/>
+            </div>
+    </div>
+    <purchased-template></purchased-template>
+</div>
