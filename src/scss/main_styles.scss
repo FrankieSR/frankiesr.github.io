@@ -1,0 +1,49 @@
+
+//import fonts
+//
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
+//import variables
+//
+@import "./variables.scss";
+
+// import components
+//
+@import "../modules/components/app/app.scss";
+@import "../modules/components/header/header.scss";
+@import "../modules/components/purchaseCart/purchaseCart.scss";
+@import "../modules/components/logo/logo.scss";
+@import "../modules/components/main/main.scss";
+@import "../modules/components/content/content.scss";
+@import "../modules/components/cart/cart.scss";
+@import "../modules/components/sidebar/sidebar.scss";
+@import "../modules/components/toolbar/toolbar.scss";
+@import "../modules/components/products/products.scss";
+@import "../modules/components/pagination/pagination.scss";
+@import "../modules/components/footer/footer.scss";
+
+
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 15px;
+    color: $color-main;
+    background-color: $background-main;
+}
+
+.disabled {
+    visibility: hidden;
+}
+
+.line {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    background-color: $orange;
+    top: 420px;
+    z-index: -1;
+    left: 0;
+    transform: skewY(10deg);
+    box-shadow: 0 0 25px 1px $gray-600;
+}

@@ -1,0 +1,58 @@
+.purchased {
+    border-left: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    border-right: 2px solid $orange;
+    border-radius: 0;
+    background-color: $background-main;
+    font-size: 12px;
+    min-width: 270px;
+    position: absolute;
+    padding: 10px;
+    right: 10%;
+    top: 80px;
+    z-index: 1100;
+
+    &__table-cell {
+        padding: 5px 0;
+
+        &--remove {
+            bottom: 2px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            color: $orange;
+            cursor: pointer;
+            display: block;
+            height: 10px;
+            left: 5px;
+            line-height: 10px;
+            position: relative;
+            text-align: center;
+            top: 3px;
+            width: 20px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $media_desktop) {
+    .purchased {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: $media_tablet) {
+    .purchased {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: $media_mobile) {
+    .purchased {
+        right: 10px;
+        top: 82px;
+        max-width: 240px;
+    }
+}

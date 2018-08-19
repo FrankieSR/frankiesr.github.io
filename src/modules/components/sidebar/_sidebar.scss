@@ -1,0 +1,67 @@
+.sidebar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 30px;
+    position: fixed;
+
+    &__min-price,
+    &__max-price {
+        margin: 10px;
+
+        input {
+            border: 1px solid $orange;
+            font-size: 15px;
+            padding: 10px;
+        }
+    }
+
+    span {
+        font-weight: 900;
+        padding: 5px;
+        text-decoration: underline;
+    }
+
+    button {
+        background-color: $background-secondary;
+        border: 1px solid $white;
+        cursor: pointer;
+        color: $color-secondary;
+        padding: 10px;
+        transition: .3s;
+        margin-top: 10px;
+        width: 50%;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $box-shadow;
+        }
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: $media_tablet) {
+    .sidebar {
+        margin: 25px auto;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__button {
+            flex-basis: 100%;
+        }
+
+        &__min-price,
+        &__max-price,
+        &__result {
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+}

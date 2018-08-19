@@ -12,5 +12,5 @@ requirejs.config({
 });
 
 requirejs([
-    "applicationFiles/mainModule"
+    "modules/mainModule"
 ]);

@@ -1,0 +1,30 @@
+.logo {
+    &__title {
+        font-size: 70px;
+        line-height: 25px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: $media_tablet) {
+    .logo {
+        &__title {
+            font-size: 60px;
+            line-height: 25px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: $media_mobile) {
+    .logo {
+        &__title {
+            font-size: 45px;
+            line-height: 60px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    }
+}

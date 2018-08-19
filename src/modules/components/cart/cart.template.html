@@ -1,0 +1,51 @@
+<!-- added product-items on page -->
+<!-- ko if: allProducts().length != 0 -->
+<div class="cart"
+     data-bind="foreach: items">
+
+    <!-- body product -->
+    <div class='cart__body'>
+
+    <!-- images product cart -->
+        <!-- ko ifnot: image -->
+        <img class = "cart__image"
+             src = "https://www.propeller.co.uk/wp-content/uploads/2017/04/magentologogrey.png"
+             alt="image"/>
+        <!-- /ko -->
+
+        <!-- ko if: image -->
+        <img class = "cart__image"
+             data-bind = "attr: {src: image().url}, click: ()=>{console.log(image())}"
+             alt="image"/>
+        <!-- /ko -->
+    <!-- end images product cart -->
+
+        <!-- name a product cart -->
+        <h4 class='cart__name'>
+            <strong>Product:<br /> <span data-bind="text: name"></strong>
+        </h4>
+
+        <!-- price a product cart -->
+        <p class='cart__price'>
+            price: <strong>$<span data-bind="text: price"></span></strong>
+        </p>
+
+        <!-- description a product cart -->
+        <p class='cart__description'>
+            <span data-bind="text: description"></span>
+        </p>
+
+        <!-- add item to purchase cart  -->
+        <button class='cart__buy'
+                data-bind="click: () => {$parent.addToCart($index())}">
+            <img src = "http://wfarm2.dataknet.com/static/resources/icons/set20/f02a62984db4.png"/>
+        </button>
+
+    </div> <!-- end body product -->
+</div>
+<!-- /ko -->
+<!-- ko if: allProducts().length == 0 -->
+<div class="cart__message">
+    <p><strong>No products found</strong>, please change your filters</p>
+</div>
+<!-- /ko -->

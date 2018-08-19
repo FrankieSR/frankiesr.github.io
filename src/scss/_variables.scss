@@ -1,0 +1,70 @@
+//variables
+//
+
+//colors
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #3c3c3c !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$black:    #000 !default;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #ec4817 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+//
+// theme colors---------------------------------------------------
+//
+$background-main: #fbbd0e;
+$background-secondary: #fbbd0e;
+$color-main: $gray-900;
+$color-secondary: $white;
+
+
+//fonts size
+$font-size-base:              1rem !default;
+$font-weight-normal:          400 !default;
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$border-radius: 1px;
+$box-shadow-circle: 0 0 1px 5px rgba($orange, 0.9),
+             0 0 1px 10px rgba($orange, 0.7),
+             0 0 1px 15px rgba($orange, 0.5);
+$box-shadow: 0 0 1px 1px $white, 0 10px 20px 0px $gray-600;
+
+
+//
+//- media query variables colors---------------------------------------------------
+
+$media_desktop: 1367px;
+$media_tablet: 950px;
+$media_mobile: 540px;

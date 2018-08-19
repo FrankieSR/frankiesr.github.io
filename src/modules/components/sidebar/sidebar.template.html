@@ -1,0 +1,17 @@
+<!-- sider template -->
+<div class="sidebar">
+    <p>You choosed:</p>
+
+    <div class="sidebar__min-price">
+        <input data-bind="value: inputValueMin">
+    </div>
+    <div class="sidebar__max-price">
+        <input data-bind="value: inputValueMax">
+    </div>
+    <div class="sidebar__result">
+        <p>from<strong>$</strong><span data-bind="text: inputValueMin"></span> to <strong> $</strong><span data-bind="text: inputValueMax"></span></p>
+    </div>
+
+
+    <button data-bind='click: filteredProducts'>Filter price</button>
+</div>
