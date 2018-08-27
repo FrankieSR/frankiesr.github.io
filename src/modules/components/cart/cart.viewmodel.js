@@ -1,29 +1,30 @@
-define(["knockout", "lib/knockout-store/connect"], (ko, connect) => {
+define([
+    "knockout", "lib/knockout-store/connect"
+], (ko, connect) => {
     function productListViewModel(params) {
         //  ---- initialize the variables for viewmodel from store(state) --
         //
         const vm = {};
         vm.allProducts = params.allProducts;
         // ---- this component private methods
-            let arr = [];
-            let parseStorage = JSON.parse(localStorage.getItem("item"));
+        let arr = [];
+        let parseStorage = JSON.parse(localStorage.getItem("item"));
 
-            // -- -- added products info in local storage ----
-            // let setLocalStorage = () => {
-            //     localStorage.setItem(
-            //         "item",
-            //         JSON.stringify(params.itemsInPurchaseCart())
-            //     );
-            // };
+        // -- -- added products info in local storage ----
+        // let setLocalStorage = () => {
+        //     localStorage.setItem(
+        //         "item",
+        //         JSON.stringify(params.itemsInPurchaseCart())
+        //     );
+        // };
 
-            let createArrProductInfo = (index) => {
-                arr.push({
-                    name: vm.items()[index].name(),
-                    price: vm.items()[index].price()
-                });
-                params.itemsInPurchaseCart(arr);
-                console.log(arr);
-            };
+        let createArrProductInfo = (index) => {
+            arr.push({
+                name: vm.items()[index].name(),
+                price: vm.items()[index].price()
+            });
+            params.itemsInPurchaseCart(arr);
+        };
 
         // ------- change items quantity on page ----
         //
@@ -51,7 +52,6 @@ define(["knockout", "lib/knockout-store/connect"], (ko, connect) => {
             createArrProductInfo(this.index);
             // setLocalStorage();
         }
-
 
         return vm;
     }

@@ -246,7 +246,8 @@
   .cart__price {
     font-weight: 400; }
   .cart__message {
-    margin: 25px 25px 0; }
+    margin: 55px 25px 0;
+    text-align: center; }
   .cart__buy {
     bottom: 30px;
     border: 1px solid #fff;
@@ -508,24 +509,24 @@
   min-height: 50px; }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  margin: 0 15px;
+  background-color: #fbbd0e;
   color: #212529;
-  background-color: #fbbd0e; }
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0 15px; }
 
 .disabled {
   visibility: hidden; }
 
 .line {
-  height: 500px;
-  width: 100%;
-  position: absolute;
+  -webkit-box-shadow: 0 0 25px 1px #3c3c3c;
+          box-shadow: 0 0 25px 1px #3c3c3c;
   background-color: #ec4817;
-  top: 420px;
-  z-index: -1;
+  height: 500px;
   left: 0;
+  position: absolute;
+  top: 420px;
   -webkit-transform: skewY(10deg);
       -ms-transform: skewY(10deg);
           transform: skewY(10deg);
-  -webkit-box-shadow: 0 0 25px 1px #3c3c3c;
-          box-shadow: 0 0 25px 1px #3c3c3c; }
+  width: 100%;
+  z-index: -1; }

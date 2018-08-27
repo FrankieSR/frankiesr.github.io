@@ -25,8 +25,6 @@ define([
         itemsLength: ko.observable(),
         maxPrice: ko.observable(),
         minPrice: ko.observable(),
-        myLocalStorage: ko.observableArray([localStorage]),
-        storageLenth: ko.observable(localStorage.length),
         itemsInPurchaseCart: ko.observableArray(),
         visibilityCart: ko.observable(false)
     };

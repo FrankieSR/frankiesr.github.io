@@ -1,5 +1,5 @@
 define(["knockout", "lib/knockout-store/connect"], (ko, connect) => {
-    function purchaseLogic(params) {
+    function purchaseCartLogic(params) {
         const vm = {};
         vm.items = params.itemsInPurchaseCart;
         vm.visibilityCart = params.visibilityCart;
@@ -16,5 +16,5 @@ define(["knockout", "lib/knockout-store/connect"], (ko, connect) => {
 
     // join that viewModel to a common store
     //
-    return connect(joinParamsToState)(purchaseLogic);
+    return connect(joinParamsToState)(purchaseCartLogic);
 });
